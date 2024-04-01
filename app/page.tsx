@@ -7,8 +7,8 @@ const frameMetadata = getFrameMetadata({
       label: "Begin"
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmVbQpJ3fEDQDHSMqcakrCkkzzMBVCwTFnKHJeBXkDBMVs/1.png`,
-  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=2`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmPfwBBaWtL9jBnLyDt6nr83vtgBW7hhneeNzBGjDA18fC/banner.png`,
+  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 
 export const metadata: Metadata = {
@@ -17,7 +17,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cosmic Cowboys',
     description: 'A frame telling the story of Cosmic Cowboys',
-    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmVbQpJ3fEDQDHSMqcakrCkkzzMBVCwTFnKHJeBXkDBMVs/1.png`],
+    images: [
+      {
+        url:`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmPfwBBaWtL9jBnLyDt6nr83vtgBW7hhneeNzBGjDA18fC/banner.png`,
+        width: 50,
+        height: 50,
+      },
+    ],
   },
   other: {
     ...frameMetadata,
